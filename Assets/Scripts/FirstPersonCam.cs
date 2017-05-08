@@ -15,8 +15,6 @@ public class FirstPersonCam : MonoBehaviour {
             pitch -= speedV * Input.GetAxis("Mouse Y");
 
             transform.eulerAngles = new Vector3(pitch, yaw, 0.0f);
-         } else {
-            transform.Rotate(new Vector3(0, 1, 0));
          }
     }
 }

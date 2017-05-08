@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.49653405, g: 0.8304316, b: 0.9352296, a: 1}
+  m_IndirectSpecularColor: {r: 0.4890613, g: 0.832827, b: 0.93118995, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -108,36 +108,10 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &48422970
+--- !u!1 &48422970 stripped
 GameObject:
-  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100000, guid: 5507817f167a29b438fb755614d9169f, type: 3}
   m_PrefabInternal: {fileID: 732775723}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 48422975}
-  - component: {fileID: 48422974}
-  - component: {fileID: 48422973}
-  - component: {fileID: 48422971}
-  - component: {fileID: 48422972}
-  m_Layer: 0
-  m_Name: water
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &48422971
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 48422970}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad27e84f484b0464289e4b39b1ce327c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &48422972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151,61 +125,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speedH: 5
   speedV: 5
---- !u!23 &48422973
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300000, guid: 5507817f167a29b438fb755614d9169f,
-    type: 3}
-  m_PrefabInternal: {fileID: 732775723}
-  m_GameObject: {fileID: 48422970}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 2100000, guid: d12f13ef4b737764ca455693b826886d, type: 2}
-  - {fileID: 2100000, guid: 84c79f5fffdf82d4e9f5a4f7011b6987, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &48422974
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 3300000, guid: 5507817f167a29b438fb755614d9169f,
-    type: 3}
-  m_PrefabInternal: {fileID: 732775723}
-  m_GameObject: {fileID: 48422970}
-  m_Mesh: {fileID: 4300000, guid: 5507817f167a29b438fb755614d9169f, type: 3}
---- !u!4 &48422975
+--- !u!4 &48422975 stripped
 Transform:
-  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400000, guid: 5507817f167a29b438fb755614d9169f, type: 3}
   m_PrefabInternal: {fileID: 732775723}
-  m_GameObject: {fileID: 48422970}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 100, y: 100, z: 100}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &338897418
 GameObject:
   m_ObjectHideFlags: 0
@@ -241,7 +164,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 20, y: -20}
-  m_SizeDelta: {x: 50, y: 50}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &338897420
 MonoBehaviour:
@@ -373,7 +296,6 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5507817f167a29b438fb755614d9169f, type: 3}
-  m_RootGameObject: {fileID: 48422970}
   m_IsPrefabParent: 0
 --- !u!1 &875308682
 GameObject:
@@ -431,13 +353,13 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_FontSize: 60
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 50
+    m_MaxSize: 80
     m_Alignment: 4
-    m_AlignByGeometry: 0
+    m_AlignByGeometry: 1
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
@@ -788,8 +710,6 @@ MonoBehaviour:
   distance: 10
   min: 0
   max: 30
-  rotateSpeed: 0
-  doRotate: 0
-  doZoom: 1
+  smoothZoom: 1
   zoomStep: 5
   zoomSpeed: 1
