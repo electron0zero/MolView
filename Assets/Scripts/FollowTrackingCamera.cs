@@ -73,7 +73,7 @@ public class FollowTrackingCamera : MonoBehaviour
             if (cam.orthographic)
             {
                 // ... change the orthographic size based on the change in distance between the touches.
-                cam.orthographicSize += deltaMagnitudeDiff * zoomSpeed;
+                cam.orthographicSize += deltaMagnitudeDiff * (zoomSpeed/10);
 
                 // Make sure the orthographic size never drops below zero.
                 cam.orthographicSize = Mathf.Max(cam.orthographicSize, 0.1f);
@@ -81,7 +81,7 @@ public class FollowTrackingCamera : MonoBehaviour
             else
             {
                 // Otherwise change the field of view based on the change in distance between the touches.
-                cam.fieldOfView += deltaMagnitudeDiff * zoomSpeed;
+                cam.fieldOfView += deltaMagnitudeDiff * (zoomSpeed/10);
 
                 // Clamp the field of view to make sure it's between 0 and 180.
                 cam.fieldOfView = Mathf.Clamp(cam.fieldOfView, cameraFOVMin, cameraFOVMax);
