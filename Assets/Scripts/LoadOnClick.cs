@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using UnityEngine.SceneManagement;
 public class LoadOnClick : MonoBehaviour {
 
     public GameObject loadingImage;
@@ -8,6 +8,6 @@ public class LoadOnClick : MonoBehaviour {
     public void LoadScene(int level)
     {
         loadingImage.SetActive(true);
-        Application.LoadLevel(level);
+        SceneManager.LoadScene(level, LoadSceneMode.Single);
     }
 }

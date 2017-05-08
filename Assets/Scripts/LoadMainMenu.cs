@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class LoadMainMenu : MonoBehaviour {
 
     public void LoadScene(int level)
     {
-        Application.LoadLevel(level);
+        SceneManager.LoadScene(level, LoadSceneMode.Single);
     }
 }

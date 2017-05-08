@@ -13,6 +13,9 @@ public class FollowTrackingCamera : MonoBehaviour
     public float min = 10f;
     public float max = 60f;
 
+    // camera FOV for pinch to zoom (Zoom on Touch devices)
+    public float cameraFOVMin = 10f;
+    public float cameraFOVMax = 100f;
     // Options
     public bool smoothZoom = true;
 
@@ -81,7 +84,7 @@ public class FollowTrackingCamera : MonoBehaviour
                 cam.fieldOfView += deltaMagnitudeDiff * zoomSpeed;
 
                 // Clamp the field of view to make sure it's between 0 and 180.
-                cam.fieldOfView = Mathf.Clamp(cam.fieldOfView, 10f, 100f);
+                cam.fieldOfView = Mathf.Clamp(cam.fieldOfView, cameraFOVMin, cameraFOVMax);
             }
         }
     }
