@@ -12,8 +12,20 @@ Assets (3D files) used in this project is available at [MolView--3d-data-files](
 
 # Screenshots
 
+### Mobile
+
+<p align="center">
+<img src="Screenshots/m1.png" width="400">
+<img src="Screenshots/m2.png" width="400">
+<img src="Screenshots/m3.png" width="400">
+<img src="Screenshots/m4.png" width="400">
+</p>
+
+### Desktop
+
 ![Screen 1](/Screenshots/1.png)
 ![Screen 1](/Screenshots/2.png)
+
 
 ## License
 Copyright [2017] [Suraj Nath]
